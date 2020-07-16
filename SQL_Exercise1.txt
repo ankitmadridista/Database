@@ -1,0 +1,128 @@
+SQL Exercise 1 
+
+1. 
+
+==>
+create table SEMP
+(
+EMPNO CHAR(4),
+EMPNAME CHAR(20),
+BASIC FLOAT(9,2),
+DEPTNO CHAR(2),
+DEPTHEAD CHAR(4)
+);
+
+
+2.
+
+==>
+create table SDEPT
+(
+DEPTNO CHAR(2),
+DEPTNAME CHAR(15)
+);
+
+
+3.Insert into the SDEPT table the following values:-
+
+10, Development
+20, Training 
+
+
+==>
+insert into SDEPT (DEPTNO,DEPTNAME)
+values('10','DEVELOPMENT');
+
+insert into SDEPT (DEPTNO,DEPTNAME)
+values('20','TRAINING');
+
+
+4. Insert into the SEMP table the following values:-
+
+0001, SUNIL, 6000, 10
+0002, HIREN, 8000, 20
+0003, ALI, 4000, 10, 0001
+0004, GEORGE, 6000, 0002 
+
+==>
+insert into SEMP (EMPNO,EMPNAME,BASIC,DEPTNO)
+values('0001','SUNIL',6000,'10');
+
+insert into SEMP (EMPNO,EMPNAME,BASIC,DEPTNO)
+values('0002','HIREN',8000,'20');
+
+insert into SEMP (EMPNO,EMPNAME,BASIC,DEPTNO,DEPTHEAD)
+values('0003','ALI',4000,'10','0001');
+
+insert into SEMP (EMPNO,EMPNAME,BASIC,DEPTHEAD)
+values('0004','GEORGE',6000,'0002');
+
+
+==>
+CREATE TABLE S
+(
+`S#` 	CHAR(2),
+Sname 	VARCHAR(20),
+Status	INT(4),
+City	VARCHAR(20)
+);
+
+insert into S values('S1','pranay','10','London');
+insert into S values('S2','abhishek','20','Paris');
+insert into S values('S3','yash','30','Athens');
+
+
+==>
+CREATE TABLE P
+(
+`P#` 	CHAR(2),
+Pname 	VARCHAR(20),
+Color	INT(4),
+Weight	INT(4),
+City	VARCHAR(20)
+);
+
+insert into P values('P1','abc','Black','2','London');
+insert into P values('P2','def','Blue','5','Athens');
+insert into P values('P3','ghi','White','7','Paris');
+
+==>
+CREATE TABLE J
+(
+`J#` 	CHAR(2),
+Jname 	VARCHAR(20),
+City	VARCHAR(20)
+);
+
+insert into projects values('J1','Mfg_mgmt','Athens');
+insert into projects values('J2','Lib_mgmt','London');
+insert into projects values('J3','Canteen_mgmt','Paris');
+
+==>
+CREATE TABLE SPJ
+(
+`S#`	CHAR(2),
+`P#` 	CHAR(2),
+`J#` 	CHAR(2),
+QTY	INT(5)
+);
+
+
+
+==>
+
+5. SELECT * FROM S;
+
+6. SELECT `S#`,SNAME FROM S;
+
+7. SELECT PNAME,COLOR FROM P WHERE CITY='LONDON' ;
+
+8. SELECT * FROM S WHERE CITY='LONDON';
+
+9. SELECT * FROM S WHERE CITY='PARIS' || CITY='ATHENS';
+
+10. SELECT * FROM P WHERE CITY='ATHENS'
+
+11. SELECT PNAME FROM P WHERE WEIGHT BETWEEN 12 AND 14;
+
+12. SELECT * FROM S WHERE STATUS>=20;
