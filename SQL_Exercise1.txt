@@ -61,10 +61,10 @@ values('0004','GEORGE',6000,'0002');
 ==>
 CREATE TABLE S
 (
-`S#` 	CHAR(2),
-Sname 	VARCHAR(20),
-Status	INT(4),
-City	VARCHAR(20)
+`S#` CHAR(2),
+Sname VARCHAR(20),
+Status INT(4),
+City VARCHAR(20)
 );
 
 insert into S values('S1','pranay','10','London');
@@ -75,11 +75,11 @@ insert into S values('S3','yash','30','Athens');
 ==>
 CREATE TABLE P
 (
-`P#` 	CHAR(2),
-Pname 	VARCHAR(20),
-Color	INT(4),
-Weight	INT(4),
-City	VARCHAR(20)
+`P#` CHAR(2),
+Pname VARCHAR(20),
+Color VARCHAR(7),
+Weight INT(4),
+City VARCHAR(20)
 );
 
 insert into P values('P1','abc','Black','5','London');
@@ -89,14 +89,14 @@ insert into P values('P3','ghi','White','12','Paris');
 ==>
 CREATE TABLE J
 (
-`J#` 	CHAR(2),
-Jname 	VARCHAR(20),
-City	VARCHAR(20)
+`J#` CHAR(2),
+Jname VARCHAR(20),
+City VARCHAR(20)
 );
 
-insert into projects values('J1','Mfg_mgmt','Athens');
-insert into projects values('J2','Lib_mgmt','London');
-insert into projects values('J3','Canteen_mgmt','Paris');
+insert into J values('J1','Mfg_mgmt','Athens');
+insert into J values('J2','Lib_mgmt','London');
+insert into J values('J3','Canteen_mgmt','Paris');
 
 ==>
 CREATE TABLE SPJ
