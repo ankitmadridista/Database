@@ -82,9 +82,9 @@ Weight	INT(4),
 City	VARCHAR(20)
 );
 
-insert into P values('P1','abc','Black','2','London');
-insert into P values('P2','def','Blue','5','Athens');
-insert into P values('P3','ghi','White','7','Paris');
+insert into P values('P1','abc','Black','5','London');
+insert into P values('P2','def','Blue','13','Athens');
+insert into P values('P3','ghi','White','12','Paris');
 
 ==>
 CREATE TABLE J
@@ -108,7 +108,6 @@ QTY	INT(5)
 );
 
 
-
 ==>
 
 5. SELECT * FROM S;
@@ -126,3 +125,10 @@ QTY	INT(5)
 11. SELECT PNAME FROM P WHERE WEIGHT BETWEEN 12 AND 14;
 
 12. SELECT * FROM S WHERE STATUS>=20;
+
+13.select * from S where City != 'London';
+
+14.select City from S; 
+
+15.select Weight as `Weight in grams`,Weight*1000 AS `weight in milligrams`, Weight/1000 As `Weight in killograms` from P;
+

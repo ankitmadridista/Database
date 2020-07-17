@@ -1,0 +1,17 @@
+1) Which field of the Customers table is the primary key?
+==>
+Cnum
+
+2) What is the 4th column of the Customers table?
+==>
+Rating
+
+3) What is another word for row? For column?
+==>
+Row = Tuple,Entity,Oportunity
+Column = Attribute,Method
+
+4) Why isn’t it possible to see the first five rows of a table
+==>
+It's Not possible to see the first 5 rows of a table because , when you select a table the order of 
+row in output, depends on the row address. It will always be in ascending orders of row address.
