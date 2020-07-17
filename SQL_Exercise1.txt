@@ -101,10 +101,10 @@ insert into J values('J3','Canteen_mgmt','Paris');
 ==>
 CREATE TABLE SPJ
 (
-`S#`	CHAR(2),
-`P#` 	CHAR(2),
-`J#` 	CHAR(2),
-QTY	INT(5)
+`S#` CHAR(2),
+`P#` CHAR(2),
+`J#` CHAR(2),
+QTY INT(5)
 );
 
 
@@ -120,15 +120,15 @@ QTY	INT(5)
 
 9. SELECT * FROM S WHERE CITY='PARIS' || CITY='ATHENS';
 
-10. SELECT * FROM P WHERE CITY='ATHENS'
+10. SELECT * FROM P WHERE CITY='ATHENS';
 
 11. SELECT PNAME FROM P WHERE WEIGHT BETWEEN 12 AND 14;
 
 12. SELECT * FROM S WHERE STATUS>=20;
 
-13.select * from S where City != 'London';
+13. SELECT * FROM S WHERE City != 'London';
 
-14.select City from S; 
+14. SELECT CITY FROM S; 
 
-15.select Weight as `Weight in grams`,Weight*1000 AS `weight in milligrams`, Weight/1000 As `Weight in killograms` from P;
+15. SELECT WEIGHT as `Weight in grams`,Weight*1000 AS `weight in milligrams`, Weight/1000 As `Weight in killograms` FROM P;
 
