@@ -26,7 +26,7 @@ where customers.snum = salespeople.snum and comm > 0.12 ;
 4) Write a query that calculates the amount of the salesperson’s commission on each
 order by a customer with a rating above 100.
 ==>
-select amt,comm from salespeople,customers,orders
+select amt,comm from orders,customers,salespeople
 where customers.snum = salespeople.snum
 and orders.snum = salespeople.snum
 and rating > 100;
