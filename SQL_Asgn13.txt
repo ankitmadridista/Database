@@ -19,7 +19,6 @@ where salespeople.snum = customers.snum and customers.snum in
 (select snum from customers group by snum having count(snum) > 1);
 
 
-
 3) Form a union of three queries. Have the first select the snums of all salespeople in
 San Jose; the second, the cnums of all customers in San Jose; and the third the
 onums of all orders on October 3. Retain duplicates between the last two queries

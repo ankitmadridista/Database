@@ -21,7 +21,7 @@ update customers set rating = rating+100 where city = 'rome';
 
 4) Salesperson Serres has left the company. Assign her customers to Motika.
 ==>
-update customers set 
+update orders set 
 snum = (select snum from salespeople where sname = 'motika') 
 where snum =
 (select snum from salespeople where sname = 'serres');
