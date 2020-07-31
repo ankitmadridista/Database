@@ -40,5 +40,9 @@ Orders table called Entryorders to insert rows into the Orders table. Create the
 Orders table, so that SYSDATE is automatically inserted for odate if no value is
 given. Then create the Entryorders view so that no values can be given. 
 ==>
+alter table orders modify odate date default CURRENT_TIMESTAMP ; 
 
+create view Entryorders as (select * from orders);
+
+select * from Entryorders;
 
