@@ -1,2 +1,0 @@
-test from vs code
-test from server
